@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Fixed positioning for header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(15, 23, 42, 0.95);
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Relative positioning allows absolute child positioning */
+.hero {
+    position: relative;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.6), rgba(30, 64, 175, 0.6)),
+        url("https://picsum.photos/1600/900") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    position: absolute;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 10%;
+    border: 5px solid #dbeafe;
+    outline: 3px solid #93c5fd;
+    outline-offset: 5px;
+    margin: 15px;
+}
+
+.about div,
+.about img {
+    flex: 1;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Services */
+.services {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+}
+
+.service {
+    flex: 1;
+    padding: 30px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #6366f1;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
