@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Pricing section */
+.pricing-section {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.pricing-section h1 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+/* Pricing cards container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Individual cards */
+.pricing-card {
+  flex: 1;
+
+  min-height: 400px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+
+  /* Smooth hover transition */
+  transition: transform 0.3s ease;
+
+  /* Fade-in animation */
+  animation: fadeIn 1s ease-in;
+}
+
+/* Middle card */
+.featured {
+  transform: scale(1.08);
+  background-color: #e8f4ff;
+}
+
+/* Hover effect */
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Keep middle card slightly larger while hovering */
+.featured:hover {
+  transform: scale(1.08) translateY(-10px);
+}
+
+/* Price */
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+/* Features */
+.pricing-card ul {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.pricing-card li {
+  margin: 12px 0;
+}
+
+/* Button */
+button {
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #222;
+  color: white;
+
+  cursor: pointer;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile / small screens */
+@media (max-width: 750px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .featured {
+    transform: scale(1);
+  }
+
+  .featured:hover {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Main page */
+.page {
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Header */
+header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  background-color: #222;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main area */
+main {
+  display: grid;
+
+  /* Two-column Grid */
+  grid-template-columns: 2fr 1fr;
+
+  gap: 25px;
+
+  padding: 30px;
+}
+
+/* Article */
+article {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+article h1 {
+  margin-bottom: 20px;
+}
+
+article p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Sidebar */
+aside {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+aside h2 {
+  margin-bottom: 20px;
+}
+
+aside ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: #222;
+  color: white;
+
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 750px) {
+  /* Header becomes vertical */
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Article and sidebar become one column */
+  main {
+    grid-template-columns: 1fr;
+  }
+}

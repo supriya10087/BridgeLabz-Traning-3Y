@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Main dashboard grid */
+.dashboard {
+  min-height: 100vh;
+
+  display: grid;
+
+  /* Sidebar + main area */
+  grid-template-columns: 1fr 4fr;
+
+  /* Header + content */
+  grid-template-rows: 80px 1fr;
+}
+
+/* Header */
+header {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #222;
+  color: white;
+}
+
+/* Sidebar */
+aside {
+  padding: 25px;
+  background-color: #ddd;
+}
+
+aside h2 {
+  margin-bottom: 25px;
+}
+
+/* Vertical navigation */
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #222;
+  font-size: 18px;
+}
+
+/* Main content */
+main {
+  display: grid;
+
+  /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Dashboard boxes */
+.box {
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+/* Box spanning two columns */
+.wide-box {
+  grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+
+  header {
+    grid-column: 1;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  aside nav {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-box {
+    grid-column: span 1;
+  }
+}

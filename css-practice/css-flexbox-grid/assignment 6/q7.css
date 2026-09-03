@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f2f2f2;
+}
+
+/* Loader */
+.loader {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* Circles */
+.circle {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background-color: #333;
+
+  animation: bounce 0.8s infinite ease-in-out;
+}
+
+/* Delay for first circle */
+.circle1 {
+  animation-delay: 0s;
+}
+
+/* Delay for second circle */
+.circle2 {
+  animation-delay: 0.2s;
+}
+
+/* Delay for third circle */
+.circle3 {
+  animation-delay: 0.4s;
+}
+
+/* Up and down animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}

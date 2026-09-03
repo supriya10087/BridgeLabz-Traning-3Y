@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main */
+main {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Three boxes */
+.box {
+  flex: 1;
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 25px;
+  border: 2px solid #333;
+  border-radius: 10px;
+
+  transition: transform 0.3s;
+}
+
+/* Hover rotation */
+.box:hover {
+  transform: rotate(2deg);
+}
+
+.box h2 {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
