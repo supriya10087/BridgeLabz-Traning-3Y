@@ -1,0 +1,5 @@
+
+.container{display:flex;gap:20px;justify-content:center;padding:40px;flex-wrap:wrap}
+.box{padding:30px;border-width:5px;transition:.4s}
+.solid{border-style:solid}.dashed{border-style:dashed}.dotted{border-style:dotted}.groove{border-style:groove}
+.box:hover{border-color:#0077ff;border-radius:20px}

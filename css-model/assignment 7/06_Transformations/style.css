@@ -1,0 +1,1 @@
+body{display:flex;gap:30px}.box{padding:40px;background:#ddd;transition:.4s}.box:hover{transform:rotate(10deg) scale(1.2)}

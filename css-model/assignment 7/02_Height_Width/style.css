@@ -1,0 +1,4 @@
+
+.wrap{display:flex;justify-content:center;gap:20px}
+div div{min-height:100px;max-width:200px;padding:20px;background:#ddd;overflow:auto}
+.a{width:150px}.b{width:20vw;height:20vh}.c{width:10em}
