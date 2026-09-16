@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Box-Sizing Comparison</h1>
+
+        <section class="comparison">
+            <article class="box content-box">
+                <h2>content-box</h2>
+                <p>Width: 250px<br>Padding: 30px<br>Border: 4px</p>
+                <strong>Total width = 318px</strong>
+            </article>
+
+            <article class="box border-box">
+                <h2>border-box</h2>
+                <p>Width: 250px<br>Padding: 30px<br>Border: 4px</p>
+                <strong>Total width = 250px</strong>
+            </article>
+        </section>
+
+        <p class="note">
+            With <b>content-box</b>, padding and border are added to the declared width.
+            With <b>border-box</b>, they are included inside the declared width.
+        </p>
+    </main>
+</body>
+</html>

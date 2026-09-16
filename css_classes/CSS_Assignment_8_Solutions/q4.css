@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Element selector */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector */
+.highlight {
+    background: #fef3c7;
+    padding: 10px;
+}
+
+/* ID selector */
+#special {
+    background: #dbeafe;
+    padding: 10px;
+}
+
+/* Attribute selector */
+a[href] {
+    display: inline-block;
+    margin: 10px 0;
+    color: #2563eb;
+}
+
+/* Descendant selector */
+.selector-box p {
+    color: #475569;
+}
+
+/* Child selector */
+.selector-box > h2 {
+    color: #7c3aed;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    border-left: 4px solid #7c3aed;
+    padding-left: 10px;
+}
+
+/* General sibling selector */
+h2 ~ span {
+    color: #dc2626;
+}
+
+/* Universal selector is shown at the top */
+.list li {
+    padding: 8px;
+}
+
+/* :nth-child selector */
+.list li:nth-child(2) {
+    background: #dcfce7;
+    font-weight: bold;
+}

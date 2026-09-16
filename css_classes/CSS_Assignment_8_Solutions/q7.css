@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: min(850px, 92%);
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.form-area {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.search,
+select,
+.search-btn {
+    padding: 13px 15px;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+.search {
+    flex: 1;
+    border: 2px solid #cbd5e1;
+}
+
+select {
+    border: 2px solid #cbd5e1;
+    background: white;
+}
+
+.search-btn {
+    border: 0;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.search-btn:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+.search:focus,
+select:focus,
+.search-btn:focus {
+    outline: 3px solid #fbbf24;
+    outline-offset: 2px;
+}
+
+.info {
+    padding: 25px;
+    border-radius: 14px;
+    background: #f8fafc;
+}
+
+@media (max-width: 700px) {
+    .form-area {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
