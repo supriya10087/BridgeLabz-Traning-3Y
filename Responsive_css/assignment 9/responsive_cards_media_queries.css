@@ -1,0 +1,10 @@
+/* Responsive Cards with Media Queries */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6fa; color: #172033; }
+main { width: min(1150px, 92%); margin: auto; padding: 40px 0; }
+h1 { text-align: center; margin-bottom: 35px; }
+.cards { display: flex; flex-wrap: wrap; gap: 24px; }
+.card { flex: 1 1 calc(25% - 24px); min-width: 0; padding: 28px; background: white; border-radius: 14px; box-shadow: 0 4px 14px #0001; transition: background .3s ease, transform .3s ease; }
+.card:hover { background: #d9eaff; transform: translateY(-4px); }
+@media (max-width: 900px) { .card { flex-basis: calc(50% - 24px); } }
+@media (max-width: 600px) { .card { flex-basis: 100%; } }

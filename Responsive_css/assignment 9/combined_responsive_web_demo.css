@@ -1,0 +1,16 @@
+/* Combined Responsive Web Demo */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #172033; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 18px 7%; background: #172a46; color: white; }
+.logo { font-weight: bold; font-size: 1.4rem; }
+nav { display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; }
+.dashboard { width: min(1150px, 92%); margin: 35px auto; display: grid; grid-template-columns: 1.3fr 1fr; gap: 25px; }
+.dashboard section { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 14px #0001; animation: fadeIn .8s ease both; transition: transform .3s; }
+.dashboard section:hover { transform: translateY(-4px); }
+.gallery { grid-row: span 2; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.gallery-grid img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+footer { text-align: center; padding: 18px; background: #dce5f0; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@media (max-width: 700px) { header { flex-direction: column; gap: 15px; } .dashboard { grid-template-columns: 1fr; } .gallery { grid-row: auto; } .gallery-grid { grid-template-columns: 1fr; } }

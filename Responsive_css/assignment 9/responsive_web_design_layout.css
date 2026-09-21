@@ -1,0 +1,16 @@
+/* Responsive Web Design Layout */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; background: #eef3f8; color: #182333; }
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 7%; background: #172a46; color: white; }
+.logo { font-size: 1.5rem; font-weight: bold; }
+nav { display: flex; gap: 22px; }
+nav a { color: white; text-decoration: none; }
+main { flex: 1; }
+.features { display: flex; gap: 25px; padding: 60px 7%; }
+.features article { flex: 1; background: white; padding: 30px; border-radius: 14px; box-shadow: 0 5px 16px #0001; transition: transform .3s ease; }
+.features article:hover { transform: scale(1.04); }
+footer { text-align: center; padding: 18px; background: #dce5f0; }
+@media (max-width: 750px) {
+    .features { flex-direction: column; }
+    .site-header { flex-direction: column; gap: 15px; }
+}

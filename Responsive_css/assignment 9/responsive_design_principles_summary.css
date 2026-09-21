@@ -1,0 +1,10 @@
+/* Responsive Design Principles Summary */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #172033; }
+main { width: min(1100px, 92%); margin: auto; padding: 45px 0; }
+h1 { text-align: center; }
+.principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 35px; }
+article { padding: 28px; border-radius: 15px; background: white; box-shadow: 0 4px 15px #0001; transition: background .35s, color .35s, transform .35s; }
+article:hover { background: linear-gradient(135deg, #315efb, #6d8cff); color: white; transform: translateY(-5px); }
+pre { padding: 14px; background: #eef1f6; border-radius: 8px; overflow-x: auto; color: #172033; }
+@media (max-width: 600px) { .principles { grid-template-columns: 1fr; } }
