@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio - Bootstrap</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<header class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="fw-bold">Supriya Kumari</h1>
+    <p class="lead mb-0">Computer Science Student | Aspiring Data Analyst</p>
+  </div>
+</header>
+<main>
+<section class="container text-center py-5">
+  <!-- img-fluid makes the image responsive; rounded-circle creates a circular profile image. -->
+  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-circle profile-img shadow" alt="Profile">
+  <h2 class="mt-4">Hello, I'm Supriya</h2>
+  <p class="text-secondary mx-auto intro">I enjoy learning technology, building useful projects and solving real-world problems with data.</p>
+  <div class="d-flex justify-content-center gap-2 flex-wrap">
+    <a href="#" class="btn btn-primary">Hire Me</a>
+    <a href="#" class="btn btn-outline-dark">Download CV</a>
+  </div>
+</section>
+<section class="container pb-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4">
+          <h3 class="text-center mb-3">Contact Me</h3>
+          <!-- form-control gives Bootstrap styling to form inputs. -->
+          <form>
+            <label class="form-label" for="name">Name</label>
+            <input id="name" class="form-control mb-3" type="text" placeholder="Your name">
+            <label class="form-label" for="email">Email</label>
+            <input id="email" class="form-control mb-3" type="email" placeholder="you@example.com">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-control mb-3" rows="4" placeholder="Write your message"></textarea>
+            <button class="btn btn-dark w-100" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="text-center bg-dark text-white py-3"><small>© 2026 Supriya Kumari</small></footer>
+</body></html>

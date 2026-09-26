@@ -1,0 +1,4 @@
+.hero { background: linear-gradient(135deg, #eef5ff, #ffffff); min-height: 75vh; display:flex; align-items:center; }
+.hero-card { background: white; border: 1px solid #e7e7e7; }
+.feature-card { background:#fff; border:1px solid #e9ecef; transition:transform .2s, box-shadow .2s; }
+.feature-card:hover { transform:translateY(-5px); box-shadow:0 .75rem 1.5rem rgba(0,0,0,.08)!important; }

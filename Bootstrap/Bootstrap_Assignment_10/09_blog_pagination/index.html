@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Pagination</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="bg-dark text-white py-5"><div class="container text-center"><h1>Developer Journal</h1><p class="lead mb-0">Notes from the world of web development</p></div></header>
+<main class="container py-5">
+  <div class="row g-4">
+    <article class="col-md-4"><div class="card h-100"><div class="card-body"><h2 class="h5">Understanding CSS Flexbox</h2><p>Learn how flexible layouts work and when to use common Flexbox properties.</p><a href="#">Read more</a></div></div></article>
+    <article class="col-md-4"><div class="card h-100"><div class="card-body"><h2 class="h5">Bootstrap Grid Basics</h2><p>Build responsive page structures using rows, columns and breakpoints.</p><a href="#">Read more</a></div></div></article>
+    <article class="col-md-4"><div class="card h-100"><div class="card-body"><h2 class="h5">Clean HTML Structure</h2><p>Use semantic elements to make pages easier to understand and maintain.</p><a href="#">Read more</a></div></div></article>
+  </div>
+  <!-- Bootstrap pagination is centered with justify-content-center. -->
+  <nav class="mt-5" aria-label="Blog pages"><ul class="pagination justify-content-center"><li class="page-item disabled"><a class="page-link">Previous</a></li><li class="page-item active"><a class="page-link" href="#">1</a></li><li class="page-item"><a class="page-link" href="#">2</a></li><li class="page-item"><a class="page-link" href="#">3</a></li><li class="page-item"><a class="page-link" href="#">Next</a></li></ul></nav>
+  <div class="d-flex justify-content-center gap-2 mt-4"><button class="btn btn-outline-secondary">Older Posts</button><button class="btn btn-outline-secondary">Newer Posts</button></div>
+</main>
+</body></html>
