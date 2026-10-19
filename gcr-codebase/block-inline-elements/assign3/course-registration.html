@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Course Registration Form</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <fieldset>
+                <legend>Student Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="course">Select Course:</label>
+
+                <select id="course" name="course">
+                    <option value="">-- Select a Course --</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="database">Database Management</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+
+            </fieldset>
+
+        </form>
+
+        <br>
+
+        <h2>Available Course Schedules</h2>
+
+        <table border="1">
+
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Dr. Sharma</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Prof. Verma</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Dr. Singh</td>
+            </tr>
+
+        </table>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Course Registration</p>
+    </footer>
+
+</body>
+</html>
